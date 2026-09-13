@@ -19,7 +19,7 @@ export function Header() {
           LLM 算法工程师 · 博士研究生
         </TextEffect>
       </div>
-      <img src="/profile/profile.jpg" alt="苏杭头像" width="72" height="96" className="h-24 w-[72px] rounded-xl object-cover ring-1 ring-zinc-200 dark:ring-zinc-800" />
+      <img src="/profile/profile.jpg" alt="苏杭头像" width="120" height="150" className="h-36 w-[120px] rounded-xl object-cover ring-1 ring-zinc-200 dark:ring-zinc-800" />
     </header>
   )
 }
