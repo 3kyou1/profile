@@ -1,6 +1,7 @@
 'use client'
 import { TextEffect } from '@/components/ui/text-effect'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Header() {
   return (
@@ -19,6 +20,7 @@ export function Header() {
           LLM 算法工程师 · 博士研究生
         </TextEffect>
       </div>
+      <Image src="/profile.jpg" alt="苏杭头像" width={72} height={96} priority className="h-24 w-[72px] rounded-xl object-cover ring-1 ring-zinc-200 dark:ring-zinc-800" />
     </header>
   )
 }
