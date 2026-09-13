@@ -137,22 +137,23 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+            专注于大模型个性化与个性化教育智能体研究，探索让 AI 更懂用户的技术。
           </p>
         </div>
       </motion.section>
 
-      <motion.section
+      <motion.section id="research"
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+        <h3 className="mb-5 text-lg font-medium">代表项目</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                <div className="flex aspect-video items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500/20 via-fuchsia-500/10 to-cyan-500/20 p-6 text-center text-lg font-medium text-zinc-700 dark:text-zinc-200">
+                  {project.name}
+                </div>
               </div>
               <div className="px-1">
                 <a
@@ -172,11 +173,11 @@ export default function Personal() {
         </div>
       </motion.section>
 
-      <motion.section
+      <motion.section id="experience"
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
+        <h3 className="mb-5 text-lg font-medium">实习经历</h3>
         <div className="flex flex-col space-y-2">
           {WORK_EXPERIENCE.map((job) => (
             <a
@@ -214,7 +215,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Blog</h3>
+        <h3 className="mb-3 text-lg font-medium">研究随笔</h3>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
@@ -250,9 +251,9 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Connect</h3>
+        <h3 className="mb-5 text-lg font-medium">联系我</h3>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          Feel free to contact me at{' '}
+          欢迎通过邮箱联系我{' '}
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
             {EMAIL}
           </a>

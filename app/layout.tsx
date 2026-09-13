@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
@@ -12,26 +11,16 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  metadataBase: new URL('https://3kyou1.github.io/'),
   alternates: {
     canonical: '/'
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: '苏杭｜LLM 算法工程师',
+    template: '%s | 苏杭'
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description:  '苏杭的个人主页，专注于大模型个性化、个性化问答与教育智能体。',
 };
-
-const geist = Geist({
-  variable: '--font-geist',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
 
 export default function RootLayout({
   children,
@@ -39,9 +28,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="zh-CN" suppressHydrationWarning>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
+        className="bg-white tracking-tight antialiased dark:bg-zinc-950"
       >
         <ThemeProvider
           enableSystem={true}
