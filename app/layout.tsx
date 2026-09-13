@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://3kyou1.github.io/'),
+  metadataBase: new URL('https://3kyou1.github.io/profile/'),
   alternates: {
     canonical: '/'
   },
